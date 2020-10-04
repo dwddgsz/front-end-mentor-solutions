@@ -1,0 +1,147 @@
+/* VARIABLES */
+:root {
+    --white: #ffffff;
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --attribution: hsl(228, 45%, 44%);
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2 {
+    color: var(--very-dark-blue);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+}
+
+/* HEADER */
+
+.header {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 65px 30px;
+}
+
+.header__title {
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.header__title span {
+    display: block;
+    font-weight: 600;
+}
+
+/* BOXES */
+
+.boxes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 325px;
+    height: 240px;
+    padding: 15px;
+    background-color: var(--white);
+    margin: 0 25px 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-top: 6px solid black;
+
+}
+
+.box:nth-child(1) {
+    border-color: var(--cyan);
+}
+
+.box:nth-child(2) {
+    border-color: var(--red);
+}
+
+.box:nth-child(3) {
+    border-color: var(--orange);
+}
+
+.box:nth-child(4) {
+    border-color: var(--blue);
+}
+
+.box__title {
+    margin-bottom: 8px;
+}
+
+.box__icon {
+    display: block;
+    margin-left: auto;
+    margin-top: 35px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width:1125px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .box:nth-child(4) {
+        order: 1;
+    }
+
+    .box:nth-child(3) {
+        order: 2;
+    }
+
+    .box:nth-child(1),
+    .box:nth-child(4) {
+        transform: translateY(50%)
+    }
+}
+
+/* STYLES DELIVERED BY FRONT END MENTOR */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--attribution);
+}
