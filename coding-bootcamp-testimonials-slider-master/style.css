@@ -1,0 +1,174 @@
+/* VARIABLES */
+:root {
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+    --hover-slider: hsl(240, 33%, 93%);
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-blue);
+    background-image: url('./images/pattern-quotes.svg'), url('./images/pattern-curve.svg'), url('./images/pattern-bg.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 50% 63%, 0% 100%, 52% 8%;
+    background-size: 60px, 300px, 330px;
+    /* url('./images/pattern-bg.svg') url('./images/pattern-quotes.svg'),  */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-height: 100vh;
+
+}
+
+
+/* TYPOGRAPHY */
+
+p {
+    font-size: 1.8rem;
+}
+
+span {
+    font-size: 1.7rem;
+
+}
+
+/* PHOTO CONTAINER */
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 65px;
+}
+
+.photo-container .photo {
+    width: 250px;
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+}
+
+/* slider */
+
+.slider {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 500px;
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.315);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.slider-arrow-container {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s background-color;
+}
+
+.slider-arrow-container:hover {
+    background-color: var(--hover-slider);
+}
+
+.slider-arrow-container img {
+    width: 25%;
+    display: block;
+}
+
+
+/* STUDENT TEXT */
+.student-text {
+    padding-top: 85px;
+    text-align: center;
+}
+
+.student-review {
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-name {
+    font-weight: 700;
+}
+
+.student-speciality {
+    color: var(--grayish-blue)
+}
+
+
+@media (min-width:1000px) {
+
+    /* GLOBAL */
+    body {
+        background-position: calc(50% - 400px) calc(50% - 40px), 0% 100%, calc(50% + 400px) calc(50% - 20px);
+        background-size: 70px, 600px, 570px;
+        /* url('./images/pattern-bg.svg') url('./images/pattern-quotes.svg'),  */
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    /* TYPOGRAPHY */
+    p {
+        font-size: 2.5rem;
+    }
+
+
+    /* PHOTO CONTAINER */
+    .photo-container {
+        padding-top: 0;
+        order: 2;
+    }
+
+    .photo-container .photo {
+        width: 400px;
+    }
+
+    /* STUDENT TEXT */
+    .student-text {
+        text-align: left;
+        margin-right: -80px;
+        z-index: 2;
+    }
+}
+
+@media (min-width:767px) and (max-width:769px) {
+    body {
+        background-image: url('./images/pattern-curve.svg'), url('./images/pattern-bg.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0% 100%, 52% 8%;
+        background-size: 300px, 330px;
+    }
+}
