@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardPriceThird = document.getElementById('card-price-third');
 
     // FUNCTIONS THAT MAKE PRICE CHANGE IN HTML
-    const changeToMonthly = function () {
+    const changeToAnnually = function () {
         cardPriceFirst.innerText = '199.99';
         cardPriceSecond.innerText = '249.99';
         cardPriceThird.innerText = '399.99';
     }
-    const changeToAnnually = function () {
+    const changeToMonthly = function () {
         cardPriceFirst.innerText = '19.99';
         cardPriceSecond.innerText = '24.99';
         cardPriceThird.innerText = '39.99';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             changeToAnnually()
         }
     }
-    
+
     // LISTENERS 
 
     // LISTENER FOR CLICK 
