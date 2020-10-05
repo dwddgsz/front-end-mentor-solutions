@@ -32,15 +32,6 @@ body {
     padding: 0 25px;
 }
 
-button {
-    font-family: 'Manrope', sans-serif;
-}
-
-button,
-button:focus {
-    border: none;
-    outline: none;
-}
 
 img {
     display: block;
@@ -142,6 +133,10 @@ p {
     transition: background-color .3s;
 }
 
+.share-button:focus {
+    opacity: .6;
+    outline: none;
+}
 
 /* SHARE */
 .share-data {
