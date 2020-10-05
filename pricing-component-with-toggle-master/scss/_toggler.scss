@@ -1,0 +1,43 @@
+.toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    margin: 0 auto;
+
+    &__text {
+        color: $light-grayish-blue;
+    }
+
+    &__inside {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 25px;
+        height: 25px;
+        background-color: $white;
+        border-radius: 50%;
+        transform: translate(0, -50%);
+        transition: transform .3s;
+    }
+
+    &__label {
+        position: relative;
+        display: block;
+        width: 55px;
+        height: 30px;
+        background-image: linear-gradient(to bottom right, $linear-gradient-start 0%, $linear-gradient-end 100%);
+        border-radius: 500px;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked+label>span {
+            transform: translate(20px, -50%);
+        }
+    }
+
+}
