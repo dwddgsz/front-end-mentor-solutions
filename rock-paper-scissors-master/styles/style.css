@@ -67,7 +67,7 @@ button {
     margin: 0 auto;
     padding: 10px 0;
     border: 3px solid var(--header-outline);
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .title {
@@ -88,7 +88,7 @@ button {
     padding: 5px 20px;
     background-color: var(--white);
     text-align: center;
-    border-radius: 3px;
+    border-radius: 10px;
 
 }
 
@@ -97,6 +97,7 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: .9rem;
+    margin-bottom: -10px;
 }
 
 .score-value {
@@ -340,35 +341,31 @@ button {
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .score {
-        padding: 5px 30px;
+        padding: 5px 40px;
     }
 
     .score-title {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .score-value {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     /* OPTIONS CONTAINER */
 
-    .options-container {
-        max-width: 440px;
-    }
-
     .option {
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
     }
 
     .option-inside {
-        height: 120px;
-        width: 120px;
+        height: 135px;
+        width: 135px;
     }
 
     .option-img {
@@ -376,13 +373,16 @@ button {
     }
 
     .options-container {
+        padding-top: 120px;
+        max-width: 440px;
         background-size: 230px;
-        background-position: 50% 60%;
+        background-position: 50% 65%;
     }
 
     /* RESULT SECTION */
 
     .results-container {
+        padding-top: 120px;
         max-width: 700px;
     }
 
@@ -407,8 +407,13 @@ button {
 
     .rules-button {
         position: absolute;
+        font-size: 1.5rem;
         right: 20px;
         bottom: 20px;
+    }
+
+    .rules-popup {
+        width: 500px;
     }
 
 
