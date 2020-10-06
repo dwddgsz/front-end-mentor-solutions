@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const myOptionPhoto = document.getElementById('my-option-photo');
     const enemyOptionPhoto = document.getElementById('enemy-option-photo');
 
+
     const resultExplanation = document.getElementById('result-explanation');
     const nextRoundButton = document.getElementById('play-again');
 
@@ -68,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         optionsContainer.classList.remove('hidden');
     }
 
-    // SHOW USERS CHOICE 
+    // SHOW USERS CHOICE
 
     const showUserChoice = (e) => {
         const parent = e.target.closest('div').parentElement;
