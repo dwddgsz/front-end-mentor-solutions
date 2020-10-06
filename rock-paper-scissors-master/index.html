@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <!-- WRAPPER -->
+  <div class="wrapper">
+
+    <!-- HEADER -->
+
+    <header class="header">
+      <h1 class="title"><span>rock</span><span>paper</span><span>scissors</span></h1>
+      <div class="score">
+        <p class="score-title">Score</p>
+        <span class="score-value" id="score">0</span>
+      </div>
+    </header>
+
+    <!-- OPTIONS CONTAINER -->
+    <div class="options-container" id="options-container">
+
+      <!-- SINGLE OPTION -->
+      <div class="option paper" id="paper">
+        <div class="option-inside option-to-choose">
+          <img src="./images/icon-paper.svg" alt="paper-icon" class="option-img">
+        </div>
+      </div>
+
+      <!-- SINGLE OPTION -->
+      <div class="option scissors" id="scissors">
+        <div class="option-inside option-to-choose">
+          <img src="./images/icon-scissors.svg" alt="scissors-icon" class="option-img">
+        </div>
+      </div>
+      <!-- SINGLE OPTION -->
+      <div class="option rock margin-to-center" id="rock">
+        <div class="option-inside option-to-choose">
+          <img src="./images/icon-rock.svg" alt="rock-icon" class="option-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS CONTAINER -->
+    <div class="results-container hidden" id="results-container">
+
+      <!-- MY CHOICE -->
+      <div class="result">
+        <div class="option" id="my-option">
+          <div class="option-inside">
+            <img src="" alt="my-icon" class="option-img" id="my-option-photo">
+          </div>
+        </div>
+        <p class="result-title">Your Picked</p>
+      </div>
+
+      <!-- EMEMY CHOICE -->
+      <div class="result result-enemy">
+        <div class="option" id="enemy-option">
+          <div class="option-inside">
+            <img src="" alt="enemy-icon" class="option-img" id="enemy-option-photo">
+          </div>
+        </div>
+        <p class="result-title">The House Picked</p>
+      </div>
+
+      <!-- RESULT OUTPUT -->
+      <div class="result-output">
+        <p class="result-explanation" id="result-explanation"> You Win</p>
+        <button class="results-button" id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <!-- RULES -->
+    <button class="rules-button" id="rules-button">Rules</button>
+
+    <div class="rules-popup" id="rules-popup">
+      <h2 class="rules-title">
+        Rules
+      </h2>
+      <img src="./images/image-rules.svg" alt="">
+      <span class="rules-close" id="close-rules-popup"></span>
+    </div>
+
+  </div>
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
