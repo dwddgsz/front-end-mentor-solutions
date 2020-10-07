@@ -1,0 +1,146 @@
+.slider {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 400px;
+
+    @media screen and (min-width:992px) {
+        // own grid
+        grid-template-columns: 1fr 400px;
+        grid-template-rows: 500px;
+        // position in wrapper grid
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    @media screen and(min-width:1440px) {
+        // own grid
+        grid-template-columns: 1fr 570px;
+        grid-template-rows: 600px;
+    }
+
+
+    &__buttons-container {
+        position: absolute;
+        bottom: 350px;
+        left: 100%;
+        display: flex;
+        width: 100px;
+        height: 50px;
+        transform: translateX(-100%);
+        cursor: pointer;
+        @extend %showElementAnimation;
+
+        @media screen and (min-width:992px) {
+            left: 0;
+            bottom: 0;
+            transform: translateX(0);
+
+        }
+
+        @media screen and (min-width:1440px) {
+            width: 150px;
+            height: 75px;
+
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+        background-color: $black;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .75;
+        }
+
+        span {
+            color: $dark-gray;
+            font-size: 2.5rem;
+        }
+    }
+
+}
+
+.hero {
+    position: relative;
+    background-image: url('../images/mobile-image-hero-0.jpg');
+    @extend %backgroundProps;
+    transition: background-image 2s;
+
+    @media screen and (min-width:450px) {
+        background-image: url('../images/desktop-image-hero-0.jpg');
+    }
+}
+
+.title {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    color: $white;
+    transform: translateX(-50%);
+    @extend %showElementAnimation;
+
+    @media screen and (min-width:1440px) {
+        top: 60px;
+        left: 50px;
+        transform: translateX(0);
+    }
+}
+
+
+.ad {
+    position: relative;
+    padding: 60px 25px;
+
+    @media screen and (min-width:1440px) {
+        padding: 130px 70px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: $very-dark-gray;
+        line-height: 1.2;
+        animation: text-to-left 2s;
+    }
+
+    &__description {
+        margin-bottom: 40px;
+        animation: text-to-right 2s;
+
+        @media screen and (min-width:1440px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        color: $very-dark-gray;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        transition: background-color .3s;
+        cursor: pointer;
+        @extend %showElementAnimation;
+
+        &:hover,
+        &:focus {
+            color: $dark-gray;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        span {
+            margin: 0 0 6px 20px;
+            font-size: 30px;
+        }
+    }
+
+}

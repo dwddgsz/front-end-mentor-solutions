@@ -1,0 +1,38 @@
+.photo-container {
+    @extend %backgroundProps;
+
+    &--left {
+        background-image: url('../images/image-about-dark.jpg');
+    }
+
+    &--right {
+        background-image: url('../images/image-about-light.jpg');
+    }
+}
+
+.about {
+
+    padding: 60px 25px;
+
+    &__title {
+        padding-bottom: 10px;
+        color: $very-dark-gray;
+        text-transform: uppercase;
+        animation: text-to-right 2s;
+    }
+
+    @media screen and (min-width:992px) {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    @media screen and (min-width:1440px) {
+        padding: 85px 30px;
+    }
+
+    &__description {
+        animation: text-to-left 2s;
+    }
+
+
+}

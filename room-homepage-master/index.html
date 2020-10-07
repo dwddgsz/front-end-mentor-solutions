@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Room homepage</title>
+
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <!-- SLIDER -->
+    <article class="slider">
+      <!-- HERO SECTION -->
+      <section class="hero" id="hero">
+        <h1 class="title">room</h1>
+        <!-- BURGER -->
+        <nav class="burger" id="burger">
+          <span class="fas fa-bars"></span>
+        </nav>
+        <!-- MENU -->
+        <nav class="menu" id="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--close" id="close"><span class="fas fa-times"></span></li>
+            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- AD SECTION -->
+      <section class="ad">
+        <h2 class="ad__title" id="title">Discover innovative ways to decorate</h2>
+        <p class="ad__description" id="description"> We provide unmatched quality, comfort, and style for property
+          owners
+          across
+          the country.
+          Our experts combine form andnfunction in bringing your vision to life. Create a room in your
+          own style with our collection and make your property a reflection of you and what you love.</p>
+        <button class="ad__button">Shop now <span>&rarr;</span></button>
+        <!-- SLIDER BUTTONS -->
+        <div class="slider__buttons-container">
+          <div class="slider__button" id="button-prev"><span class="fas fa-chevron-left"></span></div>
+          <div class="slider__button" id="button-next"><span class="fas fa-chevron-right"></span></div>
+        </div>
+      </section>
+    </article>
+
+
+    <!-- PHOTO CONTAINER -->
+    <div class="photo-container photo-container--left">
+    </div>
+
+    <!-- ABOUT -->
+
+    <article class="about">
+      <h3 class="about__title">About our furniture</h3>
+      <p class="about__description">Our multifunctional collection blends design and function to suit your individual
+        taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+    </article>
+
+    <!-- PHOTO CONTAINER -->
+    <div class="photo-container photo-container--right">
+
+    </div>
+    <div class="block-content" id="block-content"></div>
+  </div>
+
+
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

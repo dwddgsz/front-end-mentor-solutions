@@ -1,0 +1,15 @@
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$dark-gray: hsl(0, 0%, 63%);
+$very-dark-gray: hsl(0, 0%, 27%);
+
+%backgroundProps {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%showElementAnimation {
+    opacity: 0;
+    animation: show-element 1.5s 2s forwards;
+}
