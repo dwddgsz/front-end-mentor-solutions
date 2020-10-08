@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleBox = document.getElementById('toggle-box');
     const toggleInside = document.getElementById('toggle-inside');
+    const toggleText = document.getElementById('toggle-text');
+    const themeNames = ['Dark Mode', 'Light Mode'];
     const bgColors = ['hsl(230, 17%, 14%)', ' hsl(0, 0%, 100%)'];
     const bgPatterColors = ['hsl(232, 19%, 15%)', 'hsl(225, 100%, 98%)'];
     const cardBgColors = ['hsl(228, 28%, 20%)', 'hsl(227, 47%, 96%)'];
@@ -13,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleBox.addEventListener('click', () => {
         currentThemeNumber = currentThemeNumber === 0 ? 1 : 0;
         toggleInside.classList.toggle('toggle-right');
+        toggleText.innerText = themeNames[currentThemeNumber];
         document.documentElement.style.setProperty('--bg', bgColors[currentThemeNumber]);
         document.documentElement.style.setProperty('--bg-pattern', bgPatterColors[currentThemeNumber]);
         document.documentElement.style.setProperty('--card-bg', cardBgColors[currentThemeNumber]);
