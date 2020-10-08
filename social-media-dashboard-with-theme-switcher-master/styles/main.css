@@ -152,6 +152,7 @@ p {
     margin-bottom: 25px;
     background-color: var(--card-bg);
     overflow: hidden;
+    opacity: 0;
 }
 
 .main-card::after {
@@ -161,6 +162,22 @@ p {
     left: 0;
     width: 100%;
     height: 5px;
+}
+
+.main-card:nth-child(1) {
+    animation: from-top-to-bottom .8s forwards;
+}
+
+.main-card:nth-child(2) {
+    animation: from-top-to-bottom .8s forwards .2s;
+}
+
+.main-card:nth-child(3) {
+    animation: from-top-to-bottom .8s forwards .4s;
+}
+
+.main-card:nth-child(4) {
+    animation: from-top-to-bottom .8s forwards .6s;
 }
 
 .main-card:nth-child(1)::after {
@@ -286,6 +303,20 @@ p {
 
 .small-card__today img {
     padding-right: 5px;
+}
+
+/* ANIMATIONS */
+
+@keyframes from-top-to-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* QUERIES */
