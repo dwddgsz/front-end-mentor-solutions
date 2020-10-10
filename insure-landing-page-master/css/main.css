@@ -1,1 +1,75 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #2d2640;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: 'Karla', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

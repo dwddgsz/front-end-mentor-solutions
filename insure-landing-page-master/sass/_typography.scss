@@ -1,2 +1,27 @@
 // font-family: 'DM Serif Display', serif;
 // font-family: 'Karla', sans-serif;
+h2,
+h3,
+h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    color: $white;
+    font-size: 3.5rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $DarkViolet;
+}
+
+p,
+a {
+    font-size: 1.6rem;
+}
