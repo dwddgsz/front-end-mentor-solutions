@@ -1,77 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 
-  
   <title>Frontend Mentor | Insure landing page</title>
 
 </head>
+
 <body>
 
-  How we work
-  Blog
-  Account
-  View plans
+  <div class="wrapper">
 
-  Humanizing your insurance.
+    <!-- MENU -->
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+    <nav class="menu">
+      <h1 class="menu__logo">insude</h1>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="" class="menu__link">
+            How we work</a></li>
+        <li class="menu__item"><a href="" class="menu__link"> Blog</a></li>
+        <li class="menu__item"><a href="" class="menu__link"> Account</a></li>
+        <li class="menu__item"><a href="" class="menu__link"> View plans</a></li>
+      </ul>
+      <div class="menu__burger"><img src="./images/icon-hamburger.svg" alt="burger-menu-icon"></div>
+    </nav>
 
-  View plans
+    <!-- HERO -->
 
-  We’re different
+    <article class="hero">
+      <section class="hero__photo-section">
+        <img src="./images/image-intro-mobile.jpg" alt="happy-family-photo">
+      </section>
+      <section>
+        <h2 class="hero__title">Humanizing your insurance.</h2>
+        <p class="hero__description"> Get your life insurance coverage easier and faster. We blend our expertise
+          and technology to help you find the plan that’s right for you. Ensure you
+          and your loved ones are protected.</p>
+        <button class="hero__button">View plans</button>
+      </section>
+    </article>
 
-  Snappy Process
+    <!-- OFFER -->
 
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
+    <article class="offer">
+      <h2 class="offer__title"> We’re different</h2>
 
-  Affordable Prices
+      <section class="offer__container">
+        <div class="offer__item">
+          <div class="offer__icon-container">
+            <img src="" alt="" class="offer__icon">
+          </div>
+          <h4 class="offer__subtitle"> Snappy Process</h4>
+          <p class="offer__description">Our application process can be completed in minutes, not hours. Don’t get
+            stuck filling in tedious forms.</p>
+        </div>
 
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
+        <div class="offer__item">
+          <div class="offer__icon-container">
+            <img src="" alt="" class="offer__icon">
+          </div>
+          <h4 class="offer__subtitle"> Affordable Prices</h4>
+          <p class="offer__description">We don’t want you worrying about high monthly costs. Our prices may be low,
+            but we still offer the best coverage possible.</p>
+        </div>
 
-  People First
+        <div class="offer__item">
+          <div class="offer__icon-container">
+            <img src="" alt="" class="offer__icon">
+          </div>
+          <h4 class="offer__subtitle"> People First</h4>
+          <p class="offer__description">Our plans aren’t full of conditions and clauses to prevent payouts. We make
+            sure you’re covered when you need it.</p>
+        </div>
 
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
+      </section>
 
-  Find out more about how we work
+    </article>
 
-  How we work
 
-  Our company
+    <article class="banner">
+      <div class="banner__content">
+        <h3 class="banner__title"> Find out more about how we work
+        </h3>
+        <button class="banner__button"> How we work
+        </button>
+      </div>
+    </article>
 
-  How we work
-  Why Insure?
-  View plans
-  Reviews
+    <footer class="footer">
+      <header class="footer__header">
+        <p class="footer__logo">insure</p>
+        <div class="footer__icons-container">
+          <img src="./images/icon-facebook.svg" alt="facebook-icon">
+          <img src="./images/icon-twitter.svg" alt="twitter-icon">
+          <img src="./images/icon-pinterest.svg" alt="pinterset-icon">
+          <img src="./images/icon-instagram.svg" alt="instagram-icon">
+        </div>
+      </header>
+      <div class="footer__links-container">
 
-  Help me
+        <ul class="footer__list">
+          <li class="footer__item-title">
+            <h5 class="footer__list-title"> Our company
+            </h5>
+          </li>
+          <li class="footer__item"><a href="" class="footer__link"> How we work
+            </a></li>
+          <li class="footer__item"><a href="" class="footer__link"> Why Insure?
+            </a></li>
+          <li class="footer__item"><a href="" class="footer__link"> View plans
+            </a></li>
+          <li class="footer__item"><a href="" class="footer__link"> Reviews
+            </a></li>
 
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
+        </ul>
 
-  Contact
 
-  Sales
-  Support
-  Live chat
+        <ul class="footer__list">
+          <li class="footer__item-title">
+            <h5 class="footer__list-title"> Help me
+            </h5>
+          </li>
+          <li class="footer__item"><a href="" class="footer__link">FAQ</a></li>
+          <li class="footer__item"><a href="" class="footer__link"> Terms of use
+            </a></li>
+          <li class="footer__item"><a href="" class="footer__link"> Privacy policy
+            </a></li>
+          <li class="footer__item"><a href="" class="footer__link">Cookies</a></li>
 
-  Others
+        </ul>
 
-  Careers
-  Press
-  Licenses
+
+        <ul class="footer__list">
+          <li class="footer__item-title">
+            <h5 class="footer__list-title">Contact</h5>
+          </li>
+          <li class="footer__item"><a href="" class="footer__link">Sales</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Support</a></li>
+          <li class="footer__item"><a href="" class="footer__link"> Live chat
+            </a></li>
+
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__item-title">
+            <h5 class="footer__list-title">Others</h5>
+          </li>
+          <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Press</a></li>
+          <li class="footer__item"><a href="" class="footer__link">Licenses</a></li>
+
+        </ul>
+
+      </div>
+
+
+    </footer>
+
+
+
   </div>
+
+  </div>
+
+  <script src="script/index.js"></script>
 </body>
+
 </html>
