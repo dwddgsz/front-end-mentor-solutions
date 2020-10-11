@@ -23,34 +23,42 @@
 
     <nav class="menu">
       <img src="./images/logo.svg" alt="logo-icon" class="menu__logo">
-      <ul class="menu__list">
+      <ul class="menu__list" id="menu-list">
         <li class="menu__item"><a href="#" class="menu__link">
             How we work</a></li>
         <li class="menu__item"><a href="#" class="menu__link"> Blog</a></li>
         <li class="menu__item"><a href="#" class="menu__link"> Account</a></li>
         <li class="menu__item"><a href="#" class="menu__link"> View plans</a></li>
       </ul>
-      <div class="menu__burger"></div>
+      <div class="menu__burger" id="burger"></div>
     </nav>
 
     <!-- HERO -->
 
-    <article class="hero">
+    <header class="hero">
       <section class="hero__photo-section">
-        <img src="./images/image-intro-mobile.jpg" alt="happy-family-photo">
+        <picture>
+          <source media="(min-width:0px)" srcset="./images/image-intro-mobile.jpg">
+          <source media="(min-width:550px)" srcset="./images/image-intro-desktop.jpg">
+          <img src="./images/image-intro-desktop.jpg" alt="happy-family-photo">
+        </picture>
       </section>
-      <section>
-        <h2 class="hero__title">Humanizing your insurance.</h2>
-        <p class="hero__description"> Get your life insurance coverage easier and faster. We blend our expertise
-          and technology to help you find the plan that’s right for you. Ensure you
-          and your loved ones are protected.</p>
-        <button class="hero__button">View plans</button>
+      <section class="hero__text-content">
+        <div class="text-container">
+          <span class="hero__line"></span>
+          <h2 class="hero__title">Humanizing your insurance.</h2>
+          <p class="hero__description"> Get your life insurance coverage easier and faster. We blend our expertise
+            and technology to help you find the plan that’s right for you. Ensure you
+            and your loved ones are protected.</p>
+          <button class="hero__button">View plans</button>
+        </div>
       </section>
-    </article>
+    </header>
 
     <!-- OFFER -->
 
     <article class="offer">
+      <span class="offer__line"></span>
       <h2 class="offer__title"> We’re different</h2>
 
       <section class="offer__container">
@@ -80,14 +88,14 @@
     </article>
 
 
-    <article class="banner">
+    <div class="banner">
       <div class="banner__content">
         <h3 class="banner__title"> Find out more about how we work
         </h3>
         <button class="banner__button"> How we work
         </button>
       </div>
-    </article>
+    </div>
 
     <footer class="footer">
       <header class="footer__header">
@@ -102,7 +110,7 @@
       <div class="footer__links-container">
 
         <ul class="footer__list">
-          <li class="footer__item-title">
+          <li class="footer__list-title-container">
             <h5 class="footer__list-title"> Our company
             </h5>
           </li>
@@ -119,7 +127,7 @@
 
 
         <ul class="footer__list">
-          <li class="footer__item-title">
+          <li class="footer__list-title-container">
             <h5 class="footer__list-title"> Help me
             </h5>
           </li>
@@ -134,7 +142,7 @@
 
 
         <ul class="footer__list">
-          <li class="footer__item-title">
+          <li class="footer__list-title-container">
             <h5 class="footer__list-title">Contact</h5>
           </li>
           <li class="footer__item"><a href="#" class="footer__link">Sales</a></li>
@@ -145,7 +153,7 @@
         </ul>
 
         <ul class="footer__list">
-          <li class="footer__item-title">
+          <li class="footer__list-title-container">
             <h5 class="footer__list-title">Others</h5>
           </li>
           <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
@@ -165,7 +173,7 @@
 
   </div>
 
-  <script src="script/index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

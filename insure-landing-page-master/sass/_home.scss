@@ -1,0 +1,324 @@
+// HERO 
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__photo-section {
+        @media screen and (min-width:600px) {
+            display: none;
+        }
+    }
+
+    &__photo-section {
+        @media screen and (min-width:1250px) {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 255px;
+            right: 180px;
+            width: 430px;
+        }
+    }
+
+    &__photo-section img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &__text-content {
+        padding: 80px 15px 100px;
+        color: $white;
+        background-color: $DarkViolet;
+        text-align: center;
+        background-image: url('../images/bg-pattern-intro-left-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: relative;
+
+        @media screen and (min-width:992px) {
+            padding: 180px 120px 180px;
+            background-image: none;
+        }
+
+    }
+
+    &__line {
+        @media screen and (min-width:992px) {
+            display: block;
+            width: 200px;
+            height: 1px;
+            background-color: $white;
+        }
+    }
+
+    .text-container {
+        @media screen and (min-width:992px) {
+            width: 50%;
+            text-align: left;
+        }
+    }
+
+
+    &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 75%;
+        width: 200px;
+        height: 300px;
+        background-image: url('../images/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+
+        @media screen and (min-width:992px) {
+            background-image: url('../images/bg-pattern-intro-right-desktop.svg');
+            right: 0;
+            top: 0;
+            width: 600px;
+            height: 600px;
+            z-index: 3;
+        }
+    }
+
+    &::after {
+        @media screen and (min-width:992px) {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 530px;
+            left: 0;
+            width: 200px;
+            height: 520px;
+            background-image: url('../images/bg-pattern-intro-left-desktop.svg');
+            background-repeat: no-repeat;
+
+        }
+    }
+
+
+    &__title {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    &__description {
+        padding-bottom: 20px;
+        line-height: 1.7;
+    }
+}
+
+// OFFER
+
+.offer {
+    padding: 120px 15px 50px;
+
+    @media screen and (min-width:992px) {
+        padding: 300px 120px 50px;
+
+    }
+
+    &__line {
+        display: block;
+        width: 150px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: $DarkViolet;
+
+        @media screen and (min-width:992px) {
+            margin: 0 0;
+
+        }
+    }
+
+    &__title {
+        padding-top: 30px;
+        text-align: center;
+
+        @media screen and (min-width:992px) {
+            text-align: left;
+            padding-bottom: 80px;
+            padding-top: 50px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width:992px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        width: 330px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    &__icon {
+        padding-bottom: 20px;
+    }
+
+    &__subtitle {
+        padding-bottom: 20px;
+    }
+
+    &__description {
+        color: $DarkGrayishViolet;
+    }
+}
+
+// BANNER
+
+.banner {
+    padding: 40px 15px;
+
+    @media screen and (min-width:992px) {
+        padding: 40px 120px;
+    }
+
+    &__content {
+        padding: 90px 20px;
+        background-color: $DarkViolet;
+        text-align: center;
+        background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+
+        @media screen and (min-width:992px) {
+            padding: 90px 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+            background-size: 50%;
+            background-position: 120% 0;
+        }
+    }
+
+    &__title {
+        padding-bottom: 25px;
+        font-weight: 400;
+        text-align: center;
+
+        @media screen and (min-width:992px) {
+            flex-basis: 40%;
+            text-align: left;
+        }
+    }
+
+
+}
+
+// FOOTER 
+
+.footer {
+    background-color: $VeryLightGray;
+
+    @media screen and (min-width:992px) {
+        padding: 0 120px;
+        background-image: url('../images/bg-pattern-footer-desktop.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__header {
+        padding: 60px 15px 20px;
+        border-bottom: 1px solid $DarkGrayishViolet;
+        text-align: center;
+        background-image: url('../images/bg-pattern-footer-mobile.svg');
+        background-repeat: no-repeat;
+
+        @media screen and (min-width:992px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-image: none;
+        }
+
+    }
+
+    &__logo {
+        padding-bottom: 20px;
+    }
+
+    &__icons-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 200px;
+        margin: 0 auto;
+
+        @media screen and (min-width:992px) {
+            margin: 0 0;
+        }
+    }
+
+    &__icons-container img {
+        cursor: pointer;
+
+        &:hover {
+            @media screen and (min-width:992px) {
+                filter: brightness(50%);
+            }
+        }
+    }
+
+    &__links-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width:992px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 900px;
+        }
+    }
+
+    &__list {
+        padding: 30px 0;
+        text-align: center;
+
+        @media screen and (min-width:992px) {
+            text-align: left;
+        }
+    }
+
+    &__list-title-container {
+        padding-bottom: 30px;
+    }
+
+    &__list-title {
+        color: $DarkGrayishViolet;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        padding-bottom: 25px;
+
+
+    }
+
+    &__link {
+        color: $DarkViolet;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 2px transparent solid;
+
+        &:hover {
+            @media screen and (min-width:992px) {
+                border-bottom: 2px solid $black;
+            }
+        }
+    }
+}

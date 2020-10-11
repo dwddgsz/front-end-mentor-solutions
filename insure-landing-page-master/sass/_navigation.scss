@@ -1,0 +1,119 @@
+.menu {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width:992px) {
+        padding: 10px 70px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 30px 120px;
+    }
+
+
+    &__list {
+        display: none;
+
+        @media screen and (min-width:992px) {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 500px;
+        }
+
+
+        &.showMenuMobile {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: 999;
+            background-color: $VeryDarkViolet;
+            background-image: url('../images/bg-pattern-mobile-nav.svg');
+            background-repeat: no-repeat;
+            background-position: 0 100%;
+            background-size: 100%;
+
+        }
+    }
+
+    &__item {
+        margin-top: 40px;
+
+        @media screen and (min-width:992px) {
+            margin-top: 0px;
+        }
+
+        &:nth-child(4) {
+            padding: 15px 90px;
+            border: 2px solid $VeryLightGray;
+            cursor: pointer;
+
+            @media screen and (min-width:992px) {
+                border: 2px solid $black;
+                padding: 10px 30px;
+            }
+
+            &:hover {
+                background-color: $VeryLightGray;
+
+                @media screen and (min-width:992px) {
+                    background-color: $black;
+                }
+
+            }
+
+            &:hover a {
+                color: $VeryDarkViolet;
+
+                @media screen and (min-width:992px) {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__link {
+        color: $VeryLightGray;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+
+        @media screen and (min-width:992px) {
+            color: $DarkGrayishViolet;
+        }
+
+        &:hover {
+            @media screen and (min-width:992px) {
+                color: $black;
+            }
+        }
+
+    }
+
+    &__burger {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $black;
+        background-image: url('../images/icon-hamburger.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 1000;
+        cursor: pointer;
+
+        @media screen and (min-width:992px) {
+            display: none;
+        }
+
+        &.close {
+            background-image: url('../images/icon-close.svg');
+        }
+    }
+
+}

@@ -6,17 +6,31 @@ body,
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
 }
 
 .wrapper {
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
 }
 
 button {
     font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    padding: 9px 32px;
+    border: 2px solid $VeryLightGray;
+    color: $VeryLightGray;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $VeryLightGray;
+        color: $DarkViolet;
+    }
+
 }
