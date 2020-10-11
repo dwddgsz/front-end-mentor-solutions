@@ -510,7 +510,7 @@ button:hover {
   }
 }
 
-.footer__header {
+.footer__socials {
   padding: 60px 15px 20px;
   border-bottom: 1px solid #837d87;
   text-align: center;
@@ -519,7 +519,7 @@ button:hover {
 }
 
 @media screen and (min-width: 992px) {
-  .footer__header {
+  .footer__socials {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
