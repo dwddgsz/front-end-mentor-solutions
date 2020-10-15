@@ -6,8 +6,6 @@
         padding: 40px 200px;
     }
 
-    &__title {}
-
     &__description {
         padding-top: 20px;
         line-height: 1.6;
@@ -30,7 +28,7 @@
         cursor: pointer;
         transition: background-color .3s, color .3s;
 
-        &:hover {
+        &:hover,&:focus {
             border: 2px solid $pink;
             background-color: transparent;
             color: $pink;

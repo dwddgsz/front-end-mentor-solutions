@@ -87,9 +87,17 @@
         button {
             align-self: flex-end;
             padding: 10px 30px;
+            border: none;
             border-radius: 5px;
             background-color: $pink;
             color: $white;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                background-color: $white;
+                color: $very-dar-cyan;
+            }
         }
     }
 }
@@ -111,7 +119,6 @@
     }
 
     &__example {
-        align-items: center;
         display: flex;
         padding: 10px 0;
     }

@@ -12,10 +12,6 @@ a {
   color: white;
 }
 
-button {
-  border: none;
-}
-
 button:focus {
   outline: none;
 }
@@ -137,7 +133,7 @@ h5 {
   }
 }
 
-.header button:hover {
+.header button:hover, .header button:focus {
   background-color: #ff52bf;
   color: #fff;
 }
@@ -180,7 +176,7 @@ h5 {
   transition: background-color .3s, color .3s;
 }
 
-.invitation__button:hover {
+.invitation__button:hover, .invitation__button:focus {
   border: 2px solid #ff52bf;
   background-color: transparent;
   color: #ff52bf;
@@ -456,9 +452,16 @@ h5 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 10px 30px;
+  border: none;
   border-radius: 5px;
   background-color: #ff52bf;
   color: #fff;
+  cursor: pointer;
+}
+
+.newsletter form button:hover, .newsletter form button:focus {
+  background-color: #fff;
+  color: #00252e;
 }
 
 @media screen and (min-width: 992px) {
@@ -480,9 +483,6 @@ h5 {
 }
 
 .contact__example {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
