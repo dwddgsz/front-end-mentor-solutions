@@ -1,0 +1,141 @@
+.footer {
+    &__wave-top {
+        height: 175px;
+        width: 100%;
+        margin-bottom: -10px;
+        background-image: url('../images/bg-footer-top.svg');
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+    }
+
+    &__content {
+        padding: 40px 30px;
+        color: $white;
+        background-color: $very-dar-cyan;
+
+        @media screen and (min-width:992px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 200px;
+
+        }
+
+    }
+
+}
+
+.newsletter {
+    padding-bottom: 50px;
+
+    @media screen and (min-width:992px) {
+        order: 1;
+        max-width: 300px;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        order: 1;
+        max-width: 500px;
+
+    }
+
+    &__title {
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        padding-bottom: 20px;
+        line-height: 1.6;
+
+        @media screen and (min-width:1200px) {
+            width: 300px;
+        }
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:992px) {
+            flex-direction: row;
+
+        }
+
+        input {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+
+            @media screen and (min-width:992px) {
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+
+            @media screen and (min-width:1200px) {
+                width: 300px;
+
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            align-self: flex-end;
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-color: $pink;
+            color: $white;
+        }
+    }
+}
+
+.contact {
+    @media screen and (min-width:992px) {
+        max-width: 300px;
+        padding-right: 10px;
+    }
+
+    img {
+        width: 150px;
+        padding-bottom: 20px;
+        filter: brightness(1000%);
+    }
+
+    &__description {
+        line-height: 1.6;
+    }
+
+    &__example {
+        align-items: center;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    &__icon {
+        padding-right: 10px;
+        font-size: 2rem;
+    }
+
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+
+        @media screen and (min-width:992px) {
+            padding-top: 50px;
+
+        }
+    }
+
+
+    &__social-icon {
+        font-size: 2.5rem;
+    }
+
+}

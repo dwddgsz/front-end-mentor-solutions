@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,4 +17,15 @@ button {
 
 button:focus {
     outline: none;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
 }

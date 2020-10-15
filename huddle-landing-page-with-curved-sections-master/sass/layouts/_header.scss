@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+
+    @media screen and (min-width:992px) {
+        padding: 40px 200px 150px;
+    }
+
+    img {
+        width: 100px;
+
+        @media screen and (min-width:992px) {
+            width: 150px;
+        }
+    }
+
+    button {
+        padding: 3px 17px;
+        border: 1px solid $pink;
+        border-radius: 500px;
+        background-color: transparent;
+        color: $pink;
+        cursor: pointer;
+        transition: background-color .3s, color .3s;
+
+        @media screen and (min-width:992px) {
+            padding: 5px 20px;
+            font-size: 1.8rem;
+        }
+
+        &:hover {
+            background-color: $pink;
+            color: $white;
+        }
+    }
+
+}

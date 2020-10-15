@@ -1,0 +1,34 @@
+.numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+
+    @media screen and (min-width:992px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 200px;
+    }
+
+    &__container {
+
+        &:nth-child(1) {
+            padding-bottom: 60px;
+
+            @media screen and (min-width:992px) {
+                padding-bottom: 0;
+            }
+
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        color: #aaa;
+    }
+
+}
