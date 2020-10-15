@@ -122,7 +122,7 @@
           <div class="newsletter__form">
             <form>
               <input type="text">
-              <button>Subscribe</button>
+              <button id="form-button">Subscribe</button>
             </form>
           </div>
         </div>
@@ -149,6 +149,10 @@
     </footer>
   </div>
 
+
+  <script>
+    document.getElementById('form-button').addEventListener('click', e => e.preventDefault());
+  </script>
 </body>
 
 </html>
