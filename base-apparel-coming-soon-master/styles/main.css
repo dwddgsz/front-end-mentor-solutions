@@ -1,0 +1,264 @@
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-red: hsl(0, 6%, 24%);
+    --button-gradient: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+input {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    background-color: hsl(0, 100%, 98%);
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-container {
+    height: 250px;
+    margin-top: 75px;
+    background-image: url('../images/hero-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    padding-left: 30px;
+    background-color: #fff;
+}
+
+.logo-container img {
+    height: 25px;
+}
+
+.text-container {
+    text-align: center;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 4.5rem;
+    padding: 60px 0 20px;
+    color: var(--dark-red) font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+h2 span {
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+p {
+    padding-bottom: 20px;
+    color: var(--desaturated-red);
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+form {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    color: hsl(0, 36%, 85%);
+    font-size: 1.6rem;
+}
+
+
+label.focus {
+    animation: label-animation 1s forwards;
+}
+
+@keyframes label-animation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 500px;
+    border: 1px solid var(--desaturated-red);
+    background-color: transparent;
+    color: hsl(0, 36%, 85%);
+    font-size: 1.6rem;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 17px 30px;
+    border-radius: 500px;
+    border: none;
+    background-image: var(--button-gradient);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.226);
+    cursor: pointer;
+    transition: box-shadow .3s, background-image .3s, transform .3s;
+}
+
+button:hover {
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.425);
+    transform: translateY(-5px);
+    background-image: var(--button-gradient-active);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 80%, 86%) 100%);
+}
+
+button:focus {
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.226);
+    transform: translateY(0px);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 80%, 86%) 100%);
+}
+
+input,
+button {
+    border-radius: 500px;
+}
+
+input,
+button:focus {
+    outline: none;
+}
+
+.error-icon {
+    position: absolute;
+    top: 16px;
+    right: 100px;
+}
+
+.error-message {
+    padding-left: 20px;
+    text-align: left;
+    color: var(--soft-red);
+}
+
+.error-message.succes {
+    color: #4BB543;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width:400px) {
+    .photo-container {
+        background-position: 0% 15%;
+        min-height: 300px;
+    }
+}
+
+@media (min-width:600px) {
+    .photo-container {
+        background-image: url('../images/hero-desktop.jpg');
+        background-position: 0% 0%;
+        min-height: 400px;
+    }
+}
+
+@media (min-width:1024px) {
+    body {
+        min-height: 100vh;
+    }
+
+    html {
+        background-color: transparent;
+    }
+
+    .wrapper {
+        display: flex;
+        min-height: 700px;
+        max-height: 900px;
+        background-color: hsl(0, 100%, 98%);
+
+    }
+
+    .photo-container {
+        height: auto;
+        min-width: 500px;
+        margin-top: 0;
+        order: 1;
+    }
+
+    .content {
+        padding: 50px 100px 0;
+        background-image: url('../images/bg-pattern-desktop.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo-container {
+        position: relative;
+        padding-left: 0;
+        background-color: transparent;
+    }
+
+    .logo-container img {
+        height: 35px;
+    }
+
+    .text-container {
+        padding: 0;
+        text-align: left;
+    }
+
+    h2 {
+        padding: 80px 0 20px;
+        font-size: 6rem;
+        line-height: 1.1;
+    }
+
+    p {
+        padding-bottom: 40px;
+        font-size: 1.7rem;
+    }
+
+    button {
+        padding: 17px 40px;
+    }
+
+
+}
