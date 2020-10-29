@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_variables.scss",
+        "../scss/_reset.scss",
+        "../scss/_typography.scss",
+        "../scss/_components.scss",
+        "../scss/_home.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
