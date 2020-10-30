@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+img {
+    display: block;
+}

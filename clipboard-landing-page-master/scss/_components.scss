@@ -1,0 +1,61 @@
+// SECTION WRAPPER
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 50px 70px;
+    text-align: center;
+
+    &__header {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        padding: 30px 0;
+
+        @media screen and (min-width:992px) {
+            padding: 60px 0 50px;
+        }
+    }
+
+    &__description {
+        padding-bottom: 40px;
+
+        @media screen and (min-width:992px) {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+// BUTTONS
+
+.button {
+    width: 250px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-radius: 500px;
+    font-weight: 600;
+    color: $backgroundColor;
+    cursor: pointer;
+    transition: .3s opacity;
+
+    @media screen and (min-width:992px) {
+        padding: 15px 0;
+        font-size: 1.7rem;
+    }
+
+    &--green {
+        background-color: $buttonGreen;
+        box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, .125);
+    }
+
+    &--blue {
+        background-color: $buttonBlue;
+        box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, .125);
+    }
+
+    &:hover,
+    &:focus {
+        opacity: .6;
+    }
+}

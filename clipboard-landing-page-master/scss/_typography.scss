@@ -1,1 +1,39 @@
-// font-family: 'Bai Jamjuree', sans-serif;
+h1,
+h2,
+h3 {
+    color: $headingColor;
+}
+
+h1 {
+    font-size: 2.6rem;
+
+    @media screen and (min-width:992px) {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 2.3rem;
+
+    @media screen and (min-width:992px) {
+        font-size: 3.6rem;
+    }
+}
+
+h3 {
+    font-size: 1.7rem;
+
+    @media screen and (min-width:992px) {
+        font-size: 3rem;
+    }
+}
+
+p {
+    font-size: 1.4rem;
+    color: $textColor;
+    line-height: 1.6;
+
+    @media screen and (min-width:992px) {
+        font-size: 2.2rem;
+    }
+}

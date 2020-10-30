@@ -1,0 +1,17 @@
+html {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+img {
+    max-width: 900px;
+}
