@@ -1,7 +1,7 @@
 # front-end-mentor-solutions
 
 
-[live](https://loving-shockley-d8b9be.netlify.app)
+[live](https://dwddgsz-front-end-mentor-challenges.netlify.app)
 
 
 Those are my solutions for [FrontendMentor](https://loving-shockley-d8b9be.netlify.app) Challenges
